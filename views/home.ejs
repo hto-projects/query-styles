@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <style>
+      body {
+        text-align: <%= textAlign %>;
+        color: <%= textColor %>;
+        background: <%= backgroundColor %>;
+        font-family: "<%= font %>";
+      }
+
+      img {
+        height: 500px;
+        border: 5px solid <%= textColor %>;
+      }
+
+      .message {
+        font-style: italic;
+        font-size: 3em;
+        text-shadow: -2px 2px 0px orange;
+      }
+    </style>
+  </head>
+    <body>
+      <h1>Normal Page</h1>
+      <p>I'm just a normal webpage... nothing to see here...</p>
+
+      <h2>Animal Picture</h2>
+      <img src="<%= animalImg %>" />
+      
+      <p class="message"><%= message %></p>
+    </body>
+</html>
